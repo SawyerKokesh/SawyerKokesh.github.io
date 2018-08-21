@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!-- Styles -->
+<style>
+  body {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  #chartdiv {
+    width: 100%;
+    height: 500px;
+    /* background-image: url(https://www.amcharts.com/wp-content/themes/amcharts2/css/img/chalk-bg.jpg) */
+  }
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<!-- Chart code -->
+<script>
+  var map = AmCharts.makeChart("chartdiv", {
+    "type": "map",
+    "theme": "light",
+    "colorSteps": 20,
+
+    "dataProvider": {
+      "map": "usaLow",
+      "areas": [{
+        "id": "US-AL",//
+        "value": null
+      }, {
+        "id": "US-AK",//
+        "value": null
+      }, {
+        "id": "US-AZ",//
+        "value": 52004382.266
+      }, {
+        "id": "US-AR",//
+        "value": null
+      }, {
+        "id": "US-CA",
+        "value": 61677531.3608
+      }, {
+        "id": "US-CO",
+        "value": 54981218.0476
+      }, {
+        "id": "US-CT",
+        "value": 49787136
+      }, {
+        "id": "US-DE",//
+        "value": null
+      }, {
+        "id": "US-FL",//
+        "value": null
+      }, {
+        "id": "US-GA",//
+        "value": null
+      }, {
+        "id": "US-HI",
+        "value": 57289761
+      }, {
+        "id": "US-ID",
+        "value": 56217426.2171
+      }, {
+        "id": "US-IL",
+        "value": 50983170.0625
+      }, {
+        "id": "US-IN",//
+        "value": null
+      }, {
+        "id": "US-IA",
+        "value": 47458321
+      }, {
+        "id": "US-KS",//
+        "value": null
+      }, {
+        "id": "US-KY",
+        "value": 47458321
+      }, {
+        "id": "US-LA",//
+        "value": null
+      }, {
+        "id": "US-ME",//
+        "value": null
+      }, {
+        "id": "US-MD",//
+        "value": null
+      }, {
+        "id": "US-MA",
+        "value": 51833124.228
+      }, {
+        "id": "US-MI",
+        "value": 54981218.0476
+      }, {
+        "id": "US-MN",//
+        "value": null
+      }, {
+        "id": "US-MS",//
+        "value": null
+      }, {
+        "id": "US-MO",
+        "value": 54981218.0476
+      }, {
+        "id": "US-MT",//
+        "value": null
+      }, {
+        "id": "US-NE",//
+        "value": null
+      }, {
+        "id": "US-NV",
+        "value": 50382491.2539
+      }, {
+        "id": "US-NH",//
+        "value": null
+      }, {
+        "id": "US-NJ",
+        "value": 49787136
+      }, {
+        "id": "US-NM",
+        "value": 49668700.998
+      }, {
+        "id": "US-NY",
+        "value": 57765356.6042
+      }, {
+        "id": "US-NC",
+        "value": 51128128.6349
+      }, {
+        "id": "US-ND",//
+        "value": null
+      }, {
+        "id": "US-OH",//
+        "value": null
+      }, {
+        "id": "US-OK",//
+        "value": null
+      }, {
+        "id": "US-OR",
+        "value": 62883353.6595
+      }, {
+        "id": "US-PA",
+        "value": 51103947.4335
+      }, {
+        "id": "US-RI",
+        "value": 65610000
+      }, {
+        "id": "US-SC",//
+        "value": null
+      }, {
+        "id": "US-SD",//
+        "value": null
+      }, {
+        "id": "US-TN",//
+        "value": null
+      }, {
+        "id": "US-TX",
+        "value": 52718404.8857
+      }, {
+        "id": "US-UT",//
+        "value": null
+      }, {
+        "id": "US-VT",
+        "value": 50574127.7571
+      }, {
+        "id": "US-VA",
+        "value": 50574127.7571
+      }, {
+        "id": "US-WA",
+        "value": 62573219.4567
+      }, {
+        "id": "US-WV",//
+        "value": null
+      }, {
+        "id": "US-WI",//
+        "value": null
+      }, {
+        "id": "US-WY",//
+        "value": null
+      }]
+    },
+
+    "areasSettings": {
+      "autoZoom": false
+    },
+
+    "valueLegend": {
+      "right": 10,
+      "minValue": "lower Scorse",
+      "maxValue": "Higher"
+    },
+
+    "export": {
+      "enabled": true
+    }
+
+  });
+</script>
+
+
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+    // function dothing(State, Value){
+    //   for (var i = 0; i < map.dataProvider.areas.length; i++){
+    //     if(map.dataProvider.areas[i].id === State){
+    //       map.dataProvider.areas[i].value = Value;
+    //       break;
+    //     }
+    //   }
+    // }
+
+    // function Score(WineList){
+    //   //console.log(WineList);
+    //   var totalScore = 0;
+    //   var totalEntries = WineList.length;
+    //   for (var i = 0; i < WineList.length; i++){
+    //       totalScore = totalScore + parseInt(WineList[i].points);
+    //   }
+    //   return aveScore = totalScore / totalEntries;
+    // }
+
+    // $.ajax({
+    //     url: 'http://web.engr.oregonstate.edu/~kokeshs/winemag-data-130k-v2.json',
+    //     type: 'GET',
+    //     dataType: "json",
+    //     success: displayAll
+    // });
+
+    // function displayAll(data){
+    //   console.log(data);
+    //   // var returnedData = $.grep(data.items, function (element, index) {
+      //   return element.country == "US";
+      // });
+      // //console.log(returnedData);
+      // var rData = {items: returnedData};
+
+      // var stateWines = $.grep(rData.items, function(element, index){
+      //   return element.province == "Wyoming";
+      // });
+      // var state = Score(stateWines);
+      //console.log(state);
+      //dothing("US-CA",state);
+
+      //console.log(CaliforniaWines)
+        //for each state
+        //total entries = int <-tally of the number of entries
+        //total points = int  <-sum of all points for all wine
+        //average score = int <-total points / total entries
+        //set the value of the state to be this score.
+      //console.log(returnedData);
+    //}
+  </script>
+</head>
+
+<body>
+  <!-- <a href='#' onclick='downloadCSV({ filename: "stock-data.csv" });'>Download CSV</a> -->
+  <!-- HTML -->
+  <div id="chartdiv"></div>
+  <!-- <script>  
+    //   $.ajax({
+    //     url: 'http://web.engr.oregonstate.edu/~kokeshs/winemag-data-130k-v2.json',
+    //     type: 'GET',
+    //     dataType: "json",
+    //     success: displayAll
+    // });
+    // function displayAll(data){
+    //     console.log(data);
+    //   }
+
+    var stockData = [
+      {
+        Symbol: "AAPL",
+        Company: "Apple Inc.",
+        Price: "132.54"
+      },
+      {
+        Symbol: "INTC",
+        Company: "Intel Corporation",
+        Price: "33.45"
+      },
+      {
+        Symbol: "GOOG",
+        Company: "Google Inc",
+        Price: "554.52"
+      },
+    ];
+
+    function convertArrayOfObjectsToCSV(args) {
+      var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+
+      data = args.data || null;
+      if (data == null || !data.length) {
+        return null;
+      }
+
+      columnDelimiter = args.columnDelimiter || ',';
+      lineDelimiter = args.lineDelimiter || '\n';
+
+      keys = Object.keys(data[0]);
+
+      result = '';
+      result += keys.join(columnDelimiter);
+      result += lineDelimiter;
+
+      data.forEach(function (item) {
+        ctr = 0;
+        keys.forEach(function (key) {
+          if (ctr > 0) result += columnDelimiter;
+
+          result += item[key];
+          ctr++;
+        });
+        result += lineDelimiter;
+      });
+
+      return result;
+    }
+
+    function downloadCSV(args) {
+      $.ajax({
+        url: 'http://web.engr.oregonstate.edu/~kokeshs/winemag-data-130k-v1.json',
+        type: 'GET',
+        dataType: "json",
+        success: displayAll
+      });
+
+
+      function displayAll(data) {
+        //console.log(data);
+
+        stockData = data.items;
+
+        for (m = 0; m < stockData.length; m++) {
+          $.each(stockData[m], function (key, value){
+            //value.Value = "apples";
+            //console.log(value);
+            if(jQuery.type(value) === "string"){
+              value = value.replace(/,/g, ' ');
+            }
+            //console.log(value);
+
+            stockData[m][key] = value;
+          });
+        }
+        //console.log(stockData[2]);
+        var data, filename, link;
+
+        var csv = convertArrayOfObjectsToCSV({
+          data: stockData
+        });
+        if (csv == null) return;
+
+        filename = args.filename || 'export.csv';
+
+        if (!csv.match(/^data:text\/csv/i)) {
+          csv = 'data:text/csv;charset=utf-8,' + csv;
+        }
+        data = encodeURI(csv);
+
+        link = document.createElement('a');
+        link.setAttribute('href', data);
+        link.setAttribute('download', filename);
+        link.click();
+      }
+    }
+  </script> -->
+</body>
+
+</html>
