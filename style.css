@@ -13,10 +13,10 @@ body {
 
 .fontshadow {
 	text-shadow:
-		-1px -1px 0 #7a7a7a54,
-		1px -1px 0 #7a7a7a54,
-		-1px 1px 0 #7a7a7a54,
-		1px 1px 0 #7a7a7a54;
+		-1px -1px 0 #c7c7c7,
+		1px -1px 0 #c7c7c7,
+		-1px 1px 0 #c7c7c7,
+		1px 1px 0 #c7c7c7;
 }
 
 .footer {
@@ -29,7 +29,7 @@ body {
 
 .navbar-inverse {
     background-color: #2220;
-    border-color:#ffffff;
+    border-color:#c7c7c7;
     border-bottom-width: medium;
 }
 
