@@ -98,6 +98,8 @@ body {
     flex-wrap: wrap;
     padding: 0 4px;
     padding-left: 15%;
+    overflow: auto;
+    height: 70%;
 }
 
 /* Create four equal columns that sits next to each other */
