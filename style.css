@@ -59,7 +59,7 @@ body {
 .back-text {
     text-align: center;
     position: fixed;
-    top: 25%;
+    top: 8px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -93,7 +93,7 @@ body {
 
 .scrollimg{
     overflow: auto;
-    height: calc(100vh - 175px);
+    height: calc(100vh - 270px);
 }
 
 .ro {
