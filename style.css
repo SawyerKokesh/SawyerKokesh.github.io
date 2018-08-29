@@ -19,6 +19,14 @@ body {
     background-color: #22222287;
 }
 
+.navbar-inverse .navbar-brand{
+    background-color: #333333;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    background-color: #333333;
+}
+
 .back-image {
     background-image: url("photos/moutains1.jpeg");
     background-color: #cccccc;
