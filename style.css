@@ -15,6 +15,10 @@ body {
     background-color: #2220
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #22222287;
+}
+
 .back-image {
     background-image: url("photos/moutains1.jpeg");
     background-color: #cccccc;
