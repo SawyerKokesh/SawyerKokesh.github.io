@@ -7,11 +7,19 @@ body {
     min-height: calc(100vh - 50px);
 }
 
+.element {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
 .footer {
     height: 50px;
 }
 
-.temp{
+.footcolor{
     background-color: #22222287 !important;
 }
 
