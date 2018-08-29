@@ -38,7 +38,7 @@ body {
 }
 
 .webExA a{
-    color: #333333 !important;
+    color: #ffffff !important;
 }
 
 .linkF a{
@@ -105,8 +105,9 @@ body {
 .co {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
-    max-width: 25%;
+    max-width: 33%;
     padding: 0 4px;
+    background-color: #22222287;
 }
 
 .co img {
