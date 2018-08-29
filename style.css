@@ -38,10 +38,10 @@ body {
 }
 
 webExA{
-    color: #333333;
+    color: #333333 !important;
 }
 webExI{
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .back-image {
