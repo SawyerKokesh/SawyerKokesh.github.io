@@ -21,7 +21,7 @@ body {
 
 .navbar-inverse {
     background-color: #2220;
-    border-color:#ffffff;
+    border-color:#22222287;
     border-bottom-width: medium;
 }
 
@@ -37,8 +37,11 @@ body {
     color: #333333;
 }
 
-a{
+webExA{
     color: #333333;
+}
+webExI{
+    color: #ffffff;
 }
 
 .back-image {
