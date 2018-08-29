@@ -59,7 +59,7 @@ body {
 .back-text {
     text-align: center;
     position: fixed;
-    top: 80px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
