@@ -11,7 +11,7 @@ body {
     height: 50px;
 }
 
-.footer .navbar-inverse{
+.footer > .navbar-inverse{
     background-color: #22222287;
 }
 
