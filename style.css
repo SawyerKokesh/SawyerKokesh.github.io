@@ -20,11 +20,11 @@ body {
 }
 
 .navbar-inverse .navbar-brand{
-    background-color: #333333;
+    color: #333333;
 }
 
 .navbar-inverse .navbar-nav>li>a{
-    background-color: #333333;
+    color: #333333;
 }
 
 .back-image {
