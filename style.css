@@ -12,7 +12,9 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #2220
+    background-color: #2220;
+    border-color:#22222287;
+    border-bottom-width: medium;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
