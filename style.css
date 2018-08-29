@@ -56,17 +56,6 @@ body {
     position: relative;
 }
 
-.back-image2 {
-    background-image: url("photos/moutains1.jpeg");
-    background-color: #cccccc;
-    /* height: 100%; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-}
-
 .back-text {
     text-align: center;
     position: fixed;
