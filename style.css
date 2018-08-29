@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Impact, fantasy;
+    font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;;
 }
 
 .content {
@@ -81,10 +81,6 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial;
-}
 
 .header {
     text-align: center;
