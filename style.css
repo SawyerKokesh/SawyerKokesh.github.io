@@ -11,14 +11,6 @@ body {
     margin-top: 15%;
 }
 
-.fontshadow {
-	text-shadow:
-		-1px -1px 0 #c7c7c7,
-		1px -1px 0 #c7c7c7,
-		-1px 1px 0 #c7c7c7,
-		1px 1px 0 #c7c7c7;
-}
-
 .footer {
     height: 50px;
 }
@@ -29,7 +21,7 @@ body {
 
 .navbar-inverse {
     background-color: #2220;
-    border-color:#c7c7c7;
+    border-color:#ffffff;
     border-bottom-width: medium;
 }
 
