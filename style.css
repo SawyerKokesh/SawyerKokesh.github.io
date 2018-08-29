@@ -37,10 +37,10 @@ body {
     color: #333333;
 }
 
-webExA{
+.webExA a{
     color: #333333 !important;
 }
-webExI{
+.webExI a{
     color: #ffffff !important;
 }
 
