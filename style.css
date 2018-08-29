@@ -11,6 +11,10 @@ body {
     height: 50px;
 }
 
+.footer .navbar-inverse{
+    background-color: #22222287;
+}
+
 .navbar-inverse {
     background-color: #2220;
     border-color:#22222287;
