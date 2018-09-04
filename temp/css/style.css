@@ -1004,6 +1004,11 @@ h1.bottombrand {
 h1.bottombrand:first-letter {
 	color:#f05f40;
 }
+
+h1.topTitle:first-letter{
+	color:#f05f40;
+}
+
 input.error,textarea.error {
 	border:1px solid red;
 }
