@@ -1002,11 +1002,11 @@ h1.bottombrand {
 	margin-top:0;
 }
 h1.bottombrand:first-letter {
-	color:#f05f40;
+	color:#ca8171;
 }
 
 h1.topTitle:first-letter{
-	color:#f05f40;
+	color:#f05f40 !important;
 }
 
 input.error,textarea.error {
