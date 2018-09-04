@@ -1005,10 +1005,6 @@ h1.bottombrand:first-letter {
 	color:#ca8171;
 }
 
-h1.topTitle:first-letter{
-	color:#f05f40 !important;
-}
-
 input.error,textarea.error {
 	border:1px solid red;
 }
