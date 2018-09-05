@@ -375,6 +375,11 @@ body {
 	width:100%;
 	background-size:cover;
 }
+.caption .item {
+	height:100%;
+	width:100%;
+	background-size:cover;
+}
 .carousel-caption h1 {
 	font-size:90px;
 	color:#fff;
