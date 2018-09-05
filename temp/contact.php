@@ -15,46 +15,46 @@ if ($_POST) $post=1;
 if (!$name) $errors[count($errors)] = 'Please enter your name.';
 if (!$email) $errors[count($errors)] = 'Please enter your email.'; 
 if (!$comment) $errors[count($errors)] = 'Please enter your message.'; 
-
+echo "hi im jim";
 //if the errors array is empty, send the mail
-if (!$errors) {
-	echo "hi im jim";
-	// //recipient
-	// $to = 'sawyerkokeshw@gmail.com';	
-	// //sender - from the form
-	// $from = $name . ' <' . $email . '>';
+// if (!$errors) {
+// 	echo "hi im jim";
+// 	// //recipient
+// 	// $to = 'sawyerkokeshw@gmail.com';	
+// 	// //sender - from the form
+// 	// $from = $name . ' <' . $email . '>';
 	
-	// //subject and the html message
-	// $subject = 'Message via Layana HTML from ' . $name;	
-	// $message = 'Name: ' . $name . '<br/><br/>
-	// 	       Email: ' . $email . '<br/><br/>		
-	// 	       Message: ' . nl2br($comment) . '<br/>';
+// 	// //subject and the html message
+// 	// $subject = 'Message via Layana HTML from ' . $name;	
+// 	// $message = 'Name: ' . $name . '<br/><br/>
+// 	// 	       Email: ' . $email . '<br/><br/>		
+// 	// 	       Message: ' . nl2br($comment) . '<br/>';
 
-	// //send the mail
-	// $result = sendmail($to, $subject, $message, $from);
+// 	// //send the mail
+// 	// $result = sendmail($to, $subject, $message, $from);
 	
-	// //if POST was used, display the message straight away
-	// if ($_POST) {
-	// 	if ($result) echo 'Thank you! We have received your message.';
-	// 	else{
-	// 		echo 'Sorry, unexpected error. Please try again later or not';
-	// 	} 	
+// 	// //if POST was used, display the message straight away
+// 	// if ($_POST) {
+// 	// 	if ($result) echo 'Thank you! We have received your message.';
+// 	// 	else{
+// 	// 		echo 'Sorry, unexpected error. Please try again later or not';
+// 	// 	} 	
 
 		
-	// //else if GET was used, return the boolean value so that 
-	// //ajax script can react accordingly
-	// //1 means success, 0 means failed
-	// } else {
-	// 	echo $result;	
-	// }
+// 	// //else if GET was used, return the boolean value so that 
+// 	// //ajax script can react accordingly
+// 	// //1 means success, 0 means failed
+// 	// } else {
+// 	// 	echo $result;	
+// 	// }
 
-//if the errors array has values
-} else {
-	//display the errors message
-	for ($i=0; $i<count($errors); $i++) echo $errors[$i] . '<br/>';
-	echo '<a href="index.html">Back</a>';
-	exit;
-}
+// //if the errors array has values
+// } else {
+// 	//display the errors message
+// 	for ($i=0; $i<count($errors); $i++) echo $errors[$i] . '<br/>';
+// 	echo '<a href="index.html">Back</a>';
+// 	exit;
+// }
 
 
 //Simple mail function with HTML header
@@ -69,9 +69,4 @@ if (!$errors) {
 // 	else return 0;
 // }
 
-?>
-
-Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
 ?>
