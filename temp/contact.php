@@ -18,35 +18,35 @@ if (!$comment) $errors[count($errors)] = 'Please enter your message.';
 
 //if the errors array is empty, send the mail
 if (!$errors) {
-
-	//recipient
-	$to = 'sawyerkokeshw@gmail.com';	
-	//sender - from the form
-	$from = $name . ' <' . $email . '>';
+	echo "hi im jim";
+	// //recipient
+	// $to = 'sawyerkokeshw@gmail.com';	
+	// //sender - from the form
+	// $from = $name . ' <' . $email . '>';
 	
-	//subject and the html message
-	$subject = 'Message via Layana HTML from ' . $name;	
-	$message = 'Name: ' . $name . '<br/><br/>
-		       Email: ' . $email . '<br/><br/>		
-		       Message: ' . nl2br($comment) . '<br/>';
+	// //subject and the html message
+	// $subject = 'Message via Layana HTML from ' . $name;	
+	// $message = 'Name: ' . $name . '<br/><br/>
+	// 	       Email: ' . $email . '<br/><br/>		
+	// 	       Message: ' . nl2br($comment) . '<br/>';
 
-	//send the mail
-	$result = sendmail($to, $subject, $message, $from);
+	// //send the mail
+	// $result = sendmail($to, $subject, $message, $from);
 	
-	//if POST was used, display the message straight away
-	if ($_POST) {
-		if ($result) echo 'Thank you! We have received your message.';
-		else{
-			echo 'Sorry, unexpected error. Please try again later or not';
-		} 	
+	// //if POST was used, display the message straight away
+	// if ($_POST) {
+	// 	if ($result) echo 'Thank you! We have received your message.';
+	// 	else{
+	// 		echo 'Sorry, unexpected error. Please try again later or not';
+	// 	} 	
 
 		
-	//else if GET was used, return the boolean value so that 
-	//ajax script can react accordingly
-	//1 means success, 0 means failed
-	} else {
-		echo $result;	
-	}
+	// //else if GET was used, return the boolean value so that 
+	// //ajax script can react accordingly
+	// //1 means success, 0 means failed
+	// } else {
+	// 	echo $result;	
+	// }
 
 //if the errors array has values
 } else {
@@ -58,15 +58,15 @@ if (!$errors) {
 
 
 //Simple mail function with HTML header
-function sendmail($to, $subject, $message, $from) {
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-	$headers .= 'From: ' . $from . "\r\n";
+// function sendmail($to, $subject, $message, $from) {
+// 	$headers = "MIME-Version: 1.0" . "\r\n";
+// 	$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+// 	$headers .= 'From: ' . $from . "\r\n";
 	
-	$result = mail($to,$subject,$message,$headers);
+// 	$result = mail($to,$subject,$message,$headers);
 	
-	if ($result) return 1;
-	else return 0;
-}
+// 	if ($result) return 1;
+// 	else return 0;
+// }
 
 ?>
