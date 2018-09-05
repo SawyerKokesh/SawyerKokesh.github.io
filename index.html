@@ -2,89 +2,467 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Sawyer Kokesh</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<!-- Custom Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards%7CDosis:300,400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800;'
+	 rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+	<!-- Plugin CSS -->
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
+<body id="page-top">
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top" style="height: 0px !important; padding: 0px 0px !important;"><h2>Portfolio</h2></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="page-scroll" href="#page-top">Home</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#about">About</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#services">Skills</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
 
-<body>
-    <div class="back-image">
-        <div class="content">
-            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top ">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="https://sawyerkokesh.github.io/">My Portfolio</a>
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="https://sawyerkokesh.github.io/">Home</a>
-                            </li>
-                            <li>
-                                <a href="https://sawyerkokesh.github.io/aboutMe">About Me</a>
-                            </li>
-                            <li>
-                                <a href="https://sawyerkokesh.github.io/examplesPage">WebSite Examples</a>
-                            </li>
-                            <li>
-                                <a href="https://sawyerkokesh.github.io/examplesCode">Code Examples</a>
-                            </li>
-                            <li>
-                                <a href="https://sawyerkokesh.github.io/contact">Contact Info</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container back-text">
-                <h1 style="font-size:70px">Sawyer Kokesh</h1>
-                <h3>UX developer / designer</h3>
-            </div>
+	<!-- Section Intro Slider
+================================================== -->
+	<div id="carousel-example-generic" class="carousel intro slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<!-- First slide -->
+			<div class="item active" style="background-image:url(https://sawyerkokesh.github.io/photos/moutains1.jpeg)">
+				<div class="carousel-caption">
+					<h2 data-animation="animated bounceInDown">
+						UX developer / designer </h2>
+					<h1 data-animation="animated bounceInUp">
+						Sawyer Kokesh </h1>
+					<a href="https://sawyerkokesh.github.io/files/SawyerKokeshResume.pdf" class="btn btn-ghost btn-lg" data-animation="animated fadeInLeft">Resume</a><a href="https://github.com/SawyerKokesh" class="btn btn-primary btn-lg"
+					 data-animation="animated fadeInRight">Github</a>
+				</div>
+			</div>
+			<!-- /.item -->
+			<!-- Second slide -->
+			<!-- <div class="item" style="background-image:url(https://sawyerkokesh.github.io/photos/moutains1.jpeg)">
+				<div class="carousel-caption">
+					<h2 data-animation="animated zoomInLeft">
+						Responsive HTML Template </h2>
+					<h1 data-animation="animated zoomInRight">
+						Bootstrap Theme </h1>
+					<a href="#" class="btn btn-ghost btn-lg" data-animation="animated bounceIn">Start Tour</a><a href="#" class="btn btn-primary btn-lg"
+					 data-animation="animated bounceIn">Learn More</a>
+				</div>
+			</div> -->
+			<!-- /.item -->
+			<!-- Third slide -->
+			<!-- <div class="item" style="background-image:url(https://sawyerkokesh.github.io/photos/moutains1.jpeg)">
+				<div class="carousel-caption">
+					<h2 data-animation="animated bounceInLeft">
+						Layana by WowThemesNet</h2>
+					<h1 data-animation="animated bounceInRight">
+						Happy Coding</h1>
+					<a href="#" class="btn btn-ghost btn-lg" data-animation="animated zoomInRight">Start Tour</a><a href="#" class="btn btn-primary btn-lg"
+					 data-animation="animated zoomInRight">Learn More</a>
+				</div>
+			</div> -->
+			<!-- /.item -->
+		</div>
+		<!-- /.carousel-inner -->
+		<!-- Controls (currently displayed none from style.css)-->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- /.carousel -->
 
-        </div>
-        <footer class="footcolor footer navbar-inverse">
-            <div class="container" style="color: white">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-4 col-lg-4">
-                        <h5>
-                            Email:
-                            <span class="linkF">
-                                sawyerkokeshw@gmail.com
-                            </span>
-                        </h5>
+	<!-- Section About
+================================================== -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<h2 class="section-heading">About <b>Me</b><br/>
+					</h2>
+					<hr>
+					<p>
+						I am currently looking for a UX or Web developer job, through Oregon State University I have obtained my Bachelors of Science
+						in Computer Science with an Applied option in Human-Computer Interaction. The idea of working for a new company sounds
+						like an intriguing new experience where I can utilize all of the skills that I have obtained during my time in college
+						and as a student developer.
+					</p>
+					<p>
+						Over a 9 month period, I lead a team of two other students though a successful development of a mobile application. I also
+						worked with a team at the Center for Applied Systems and Software to develop new features for a few Oregon State government
+						projects. Stemming from these opportunities, I have gained a concrete understanding of how to successfully complete
+						projects from start to finish. During group projects I have learned that teamwork is vital in the development process
+						of creating and implementing new applications.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-lg-4">
-                        <h5>
-                            Resume:
-                            <span class="linkF">
-                                <a href="files/SawyerKokeshResume.pdf" download="SawyerKokeshResume.pdf">download</a>
-                            </span>
-                        </h5>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-lg-4">
-                        <h5>
-                            <span class="linkF">
-                                <a href="https://github.com/SawyerKokesh"> Github</a>
-                            </span>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+	<!-- Section Services
+================================================== -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">My <b>Skills</b></h2>
+					<hr class="primary">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- begin 1st row -->
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="service-box">
+						<div class="iconbox bg-primary">
+							<i class="fa fa-2x fa-trophy wow bounceIn text-fade"></i>
+						</div>
+						<h3>Programming Languages</h3>
+						<p class="text-muted">
+							<b>Proficient</b>: C#, JavaScript/TypeScript, HTML, PHP, SQL, JQuery. <br>
+							<b>Familiar</b>: C/C++, Python, Java, LaTex.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="service-box">
+						<div class="iconbox bg-dark">
+							<i class="fa fa-2x fa-cloud wow bounceIn text-fade" data-wow-delay=".1s"></i>
+						</div>
+						<h3>FrameWorks</h3>
+						<p class="text-muted">
+							Mirosoft ASP.NET, MVC and WebForms; React-Native
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="service-box">
+						<div class="iconbox bg-primary">
+							<i class="fa fa-2x fa-newspaper-o wow bounceIn text-fade" data-wow-delay=".2s"></i>
+						</div>
+						<h3>Software Development Life Cycle</h3>
+						<p class="text-muted">
+							Agile, Itrative, TDD
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clearfix">
+	</div>
+
+	<!-- Section Team
+================================================== -->
+	<section class="no-padding">
+		<div class="col-md-4 bg-primary no-padding teambox">
+			<div class="team-thumb overlay-image view-overlay">
+				<img style="height:250px; display: block; margin: auto;" src="https://sawyerkokesh.github.io/photos/pageOne1.JPG" alt=""
+				 class="img-responsive">
+				<div class="mask team_quote">
+					<div class="port-zoom-link">
+						<p>
+							Provide new and interesting visuals, to view wine data in the united states and the world.
+						</p>
+					</div>
+				</div>
+			</div>
+			<h2>WINE</h2>
+			<p>
+				Visualization Site
+			</p>
+			<div class="team-social">
+				<a href="https://sawyerkokesh.github.io/pageOne/wineUS" class="btn btn-ghost btn-lg" style="height: auto; width: auto; line-height: 0px; font-size: 10px;"
+				 data-animation="animated fadeInLeft">Visit</a>
+			</div>
+		</div>
+		<div class="col-md-4 bg-dark no-padding teambox">
+			<div class="team-thumb overlay-image view-overlay">
+				<img style="height:250px; display: block; margin: auto;" src="https://sawyerkokesh.github.io/photos/pageTwo1.JPG" alt=""
+				 class="img-responsive">
+				<div class="mask team_quote">
+					<div class="port-zoom-link">
+						<p>
+							A Site to give a better UI to Coutryside pet resort, then a exel spreadsheet.
+						</p>
+					</div>
+				</div>
+			</div>
+			<h2>PET RESORT/SPA</h2>
+			<p>
+				Pet Management Site
+			</p>
+			<div class="team-social">
+				<a href="https://sawyerkokesh.github.io/pageTwo/index" class="btn btn-ghost btn-lg" style="height: auto; width: auto; line-height: 0px; font-size: 10px;"
+				 data-animation="animated fadeInLeft">Visit</a>
+			</div>
+		</div>
+		<div class="col-md-4 bg-primary no-padding teambox">
+			<div class="team-thumb overlay-image view-overlay">
+				<img style="height:250px; display: block; margin: auto;" src="https://sawyerkokesh.github.io/photos/pageThree1.JPG" alt=""
+				 class="img-responsive">
+				<div class="mask team_quote">
+					<div class="port-zoom-link">
+						<p>
+							Give a prototype of a website for the olcc, for searching and filtering.
+						</p>
+					</div>
+				</div>
+			</div>
+			<h2>LIQUER LOOKIN</h2>
+			<p>
+				OLCC website overhal prototype
+			</p>
+			<div class="team-social">
+				<a href="https://sawyerkokesh.github.io/pageThree/home" class="btn btn-ghost btn-lg" style="height: auto; width: auto; line-height: 0px; font-size: 10px;"
+				 data-animation="animated fadeInLeft">Visit</a>
+			</div>
+		</div>
+	</section>
+	<div class="clearfix">
+	</div>
+
+	<!-- Section workExperience
+================================================== -->
+	<section id="workExperience">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">My Work <b>Experience</b></h2>
+					<hr class="primary">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" data-wow-delay="0.2s">
+					<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+						<!-- Bottom Carousel Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#quote-carousel" data-slide-to="0" class="active" style="padding-top: 15px"><img class="img-responsive "
+								 src="https://sawyerkokesh.github.io/photos/CASS.JPG" alt="">
+							</li>
+							<li data-target="#quote-carousel" data-slide-to="1" style="padding-top: 10px"><img class="img-responsive" src="https://sawyerkokesh.github.io/photos/safeway.JPG"
+								 alt="">
+							</li>
+						</ol>
+						<!-- Carousel Slides / Quotes -->
+						<div class="carousel-inner text-center">
+							<!-- Quote 1 -->
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-8 col-sm-offset-2">
+										<p>
+											Adapt to many roles, facilitated customer interactions, managed projects, engaged in research such as building small proof
+											of concepts before implementation. Produced professional documents alongside development team. Met with customers
+											to develop a user interfaces then implemented that UI with a team. Collaborated with a team to discover and eliminate
+											bugs on several state government ASP.NET projects, some nearing one million lines of code.
+										</p>
+										<small>CASS</small>
+									</div>
+								</div>
+							</div>
+							<!-- Quote 2 -->
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-8 col-sm-offset-2">
+										<p>
+											Regularly trained and supervised new employees. Provided excellent customer service and tended sales. Prepared food, stocked
+											items, cleaned, and organized.
+										</p>
+										<small>SAFEWAY</small>
+									</div>
+								</div>
+							</div>
+							<!-- End Quote 2 -->
+						</div>
+						<!-- Carousel Buttons Next/Prev -->
+						<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+						<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clearfix">
+	</div>
+
+
+	<!-- Section Social
+================================================== -->
+	<!-- <section id="social" class="parallax parallax-image" style="background-image:url(https://sawyerkokesh.github.io/photos/moutains1.jpeg);">
+		<div class="overlay" style="background:#222;opacity:0.5;">
+		</div>
+		<div class="wrapsection">
+			<div class="container">
+				<div class="parallax-content">
+					<div class="row wow fadeInLeft">
+						<div class="col-md-3">
+							<div class="funfacts text-center">
+								<div class="icon">
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</div>
+								<h4>Twitter</h4>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="funfacts text-center">
+								<div class="icon">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</div>
+								<h4>Facebook</h4>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="funfacts text-center">
+								<div class="icon">
+									<a href="#"><i class="fa fa-google"></i></a>
+								</div>
+								<h4>Google</h4>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="funfacts text-center">
+								<div class="icon">
+									<a href="#"><i class="fa fa-wordpress"></i></a>
+								</div>
+								<h4>Blog</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clearfix">
+	</div> -->
+
+	<!-- Section Contact
+================================================== -->
+	<section id="contact"  class="parallax parallax-image" style="background-image:url(https://sawyerkokesh.github.io/photos/moutains1.jpeg)">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h2 class="section-heading">Contact <b>Me</b></h2>
+					<hr class="primary">
+					<p>
+						Let me know what you think.
+					</p>
+					<div class="regularform">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								Your message has been sent. Thank you!
+							</div>
+						</div>
+						<!-- <form action="http://formspree.io/sawyerkokeshw@gmail.com" id="contactform" class="text-left">
+							<input name="_replyto" type="email" class="col-md-6" placeholder="E-mail address *">
+							<textarea name="body" class="col-md-12" placeholder="Message *"></textarea>
+							<input type="submit" id="submit" class="contact submit btn btn-primary btn-xl" value="Send message">
+						</form> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Footer
+================================================== -->
+	<section class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="bottombrand wow flipInX">SAWYER KOKESH</h1>
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-lg-4">
+							<h5>
+								Email:
+								<span class="linkF">
+									sawyerkokeshw@gmail.com
+								</span>
+							</h5>
+
+						</div>
+						<div class="col-xs-4 col-sm-4 col-lg-4">
+							<h5>
+								Resume:
+								<span class="linkF">
+									<a href="files/SawyerKokeshResume.pdf" download="SawyerKokeshResume.pdf">download</a>
+								</span>
+							</h5>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-lg-4">
+							<h5>
+								<span class="linkF">
+									<a href="https://github.com/SawyerKokesh"> Github</a>
+								</span>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/countto.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
