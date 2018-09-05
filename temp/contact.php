@@ -37,7 +37,7 @@ if (!$errors) {
 	if ($_POST) {
 		if ($result) echo 'Thank you! We have received your message.';
 		else{
-			echo 'Sorry, unexpected error. Please try again later :) ' + $to + $from;
+			echo 'Sorry, unexpected error. Please try again later or not';
 		} 	
 
 		
