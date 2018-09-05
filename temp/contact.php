@@ -19,7 +19,7 @@ if (!$comment) $errors[count($errors)] = 'Please enter your message.';
 //if the errors array is empty, send the mail
 if (!$errors) {
 
-	//recipient - replace your email here
+	//recipient
 	$to = 'sawyerkokeshw@gmail.com';	
 	//sender - from the form
 	$from = $name . ' <' . $email . '>';
@@ -36,7 +36,10 @@ if (!$errors) {
 	//if POST was used, display the message straight away
 	if ($_POST) {
 		if ($result) echo 'Thank you! We have received your message.';
-		else echo 'Sorry, unexpected error. Please try again later';
+		else{
+			echo 'Sorry, unexpected error. Please try again later' + $to + $from;
+		} 	
+
 		
 	//else if GET was used, return the boolean value so that 
 	//ajax script can react accordingly
