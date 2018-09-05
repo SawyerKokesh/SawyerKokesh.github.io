@@ -388,8 +388,20 @@ body {
 	letter-spacing:3px;
 	font-family:'Dosis','Helvetica Neue',Arial,sans-serif;
 }
+.contact-caption h2 {
+	color:#fff;
+	font-size:30px;
+	letter-spacing:1px;
+	font-weight:300;
+}
 .carousel-caption h2 {
 	font-size:30px;
+	letter-spacing:1px;
+	font-weight:300;
+}
+.contact-caption h3 {
+	color:#fff;
+	font-size:25px;
 	letter-spacing:1px;
 	font-weight:300;
 }
