@@ -1,6 +1,5 @@
-.navbar{
-    min-height: 33px !important;
-    margin-bottom:0;
-    border-radius:0;
-    font-family: 'Dosis','Helvetica Neue',Arial,sans-serif;
+.h1, .h2, .h3, .h4, .h5, .p{
+
+    font-family: 'Dosis','Helvetica Neue',Arial,sans-serif !important;
+    color: #f05f40;
   }
