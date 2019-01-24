@@ -58,8 +58,11 @@
                 card.appendChild(cardBody);
 
                 var cardText = document.createElement("p");
-                var cardImage = new Image(1,1);
-                cardImage.src = itmes[i].image;
+                var cardImage = document.createElement("IMG");
+                cardImage.setAttribute("src", "image/1.jpg");
+                cardImage.setAttribute("width", "304");
+                cardImage.setAttribute("height", "228");
+                cardImage.setAttribute("alt", "The Pulpit Rock");
                 cardText.className += "card-text";
                 cardText.innerHTML = items[i].text;
                 cardBody.appendChild(cardText);
