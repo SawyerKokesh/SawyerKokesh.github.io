@@ -13,22 +13,30 @@
 
     <script type="text/javascript">
 
-
+        //Display a table of "Employees” from a JSON source 
+        //that when displayed on a desktop device looks like 
+        //a table, but looks more like a set of tiles/cards when 
+        //shown on a smaller mobile device. Bonus: Use a profile image 
+        //as part of the data to display.
         window.addEvent('load', function () {
 
             var json = {
                 "items": [
                     {
-                        "text": "sample text 1"
+                        "text": "sample text 1",
+                        "image" : "image/1.jpg"
                     },
                     {
-                        "text": "sample text 2"
+                        "text": "sample text 2",
+                        "image" : "image/2.png"
                     },
                     {
-                        "text": "sample text 3"
+                        "text": "sample text 3",
+                        "image" : "image/3.png"
                     },
                     {
-                        "text": "sample text 4"
+                        "text": "sample text 4",
+                        "image" : "image/4.png"
                     }
                 ]
             };
@@ -50,9 +58,12 @@
                 card.appendChild(cardBody);
 
                 var cardText = document.createElement("p");
+                var cardImage = new Image(1,1);
+                cardImage.src = itmes[i].image;
                 cardText.className += "card-text";
                 cardText.innerHTML = items[i].text;
                 cardBody.appendChild(cardText);
+                cardBody.appendChild(cardImage);
 
 
             }
