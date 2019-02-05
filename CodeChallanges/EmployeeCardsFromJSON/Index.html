@@ -60,10 +60,11 @@
                 var cardText = document.createElement("p");
                 var cardImage = document.createElement("IMG");
                 cardImage.setAttribute("src", items[i].image);
-                cardImage.setAttribute("width", "304");
-                cardImage.setAttribute("height", "228");
+                cardImage.className += ("cover");
+                // cardImage.setAttribute("width", "304");
+                // cardImage.setAttribute("height", "228");
                 cardImage.setAttribute("alt", "The Pulpit Rock");
-                cardText.className += "card-text cover";
+                cardText.className += "card-text";
                 cardText.innerHTML = items[i].text;
                 cardBody.appendChild(cardText);
                 cardBody.appendChild(cardImage);
