@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-nocompat.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+
+</head>
+
+<nav class="navbar navbar-dark bg-dark">
+    <h3>
+        John and Jack
+    </h3>
+</nav>
+
+<body>
+    <h5>Problem</h5>
+    <div class="probPara">
+      <p>John and his friend Jack both like to swim… but rarely at the same time. Every third day, Jack will swim in the pool alone. When Jack isn’t swimming, John will swim in the pool alone. However, every 50th day, both boys will swim in the same pool. Write some pseudocode that loops through 365 days, and outputs who is swimming on each day starting at day 1.
+      </p>
+  </div>
+  <h5>Solution</h5>
+  <figure>
+  <figcaption>Your code title</figcaption>
+  <pre>
+    <code>
+      int main(){
+    for(int i = a; i <= 365; i++){
+        //is this a multiple of 50
+        if((i % 50) == 0){
+        }
+            //Both swim
+            cout << "DAY: " << i << " JOHN and JACK SWIM" << endl
+        else{
+            //is this a multiple of 3
+            if((i % 3) == 0){
+                //jack swim 
+                cout << "DAY: " << i <<  " JACK SWIM" << endl
+            }
+            else{
+                //john swim
+                cout << "DAY: " << i <<  " JOHN SWIM" << endl
+            }
+        }
+    }
+}
+    </code>
+  </pre>
+</figure>
+
+</body>
+
+</html>
