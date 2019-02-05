@@ -23,19 +23,19 @@
             var json = {
                 "items": [
                     {
-                        "text": "sample text 1",
+                        "text": "Employee 1",
                         "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/2.png"
                     },
                     {
-                        "text": "sample text 2",
+                        "text": "Employee 2",
                         "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/3.png"
                     },
                     {
-                        "text": "sample text 3",
+                        "text": "Employee 3",
                         "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/4.png"
                     },
                     {
-                        "text": "sample text 4",
+                        "text": "Employee 4",
                         "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/5.png"
                     }
                 ]
@@ -62,7 +62,7 @@
                 cardImage.setAttribute("src", items[i].image);
                 cardImage.className += ("cover");
                 cardImage.setAttribute("width", "75%");
-                cardImage.setAttribute("alt", "The Pulpit Rock");
+                cardImage.setAttribute("alt", "temp image");
                 cardText.className += "card-text";
                 cardText.innerHTML = items[i].text;
                 cardBody.appendChild(cardText);
@@ -70,7 +70,7 @@
 
 
             }
-
+            document.getElementById("json").innerHTML = JSON.stringify(json, undefined, 2);
         });
 
     </script>
@@ -95,9 +95,10 @@
                 slug: "AWRAW"
             }], "*")
         }
+        
     </script>
-
-
+    <h5>Input Json</h5>
+    <pre id="json"></pre>
 </body>
 
 </html>
