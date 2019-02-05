@@ -24,19 +24,19 @@
                 "items": [
                     {
                         "text": "Employee 1",
-                        "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/2.png"
+                        "image": "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/2.png"
                     },
                     {
                         "text": "Employee 2",
-                        "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/3.png"
+                        "image": "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/3.png"
                     },
                     {
                         "text": "Employee 3",
-                        "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/4.png"
+                        "image": "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/4.png"
                     },
                     {
                         "text": "Employee 4",
-                        "image" : "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/5.png"
+                        "image": "https://sawyerkokesh.github.io/CodeChallanges/EmployeeCardsFromJSON/images/5.png"
                     }
                 ]
             };
@@ -67,8 +67,6 @@
                 cardText.innerHTML = items[i].text;
                 cardBody.appendChild(cardText);
                 cardBody.appendChild(cardImage);
-
-
             }
             document.getElementById("json").innerHTML = JSON.stringify(json, undefined, 2);
         });
@@ -84,8 +82,7 @@
 </nav>
 
 <body>
-    <h5 class="titleHeader">Current list
-    </h5>
+    <h5>Current list</h5>
     <div class="containerEmployees"></div>
     <script>
         // tell the embed parent frame the height of the content
@@ -95,7 +92,7 @@
                 slug: "AWRAW"
             }], "*")
         }
-        
+
     </script>
     <h5>Input Json</h5>
     <pre id="json"></pre>
