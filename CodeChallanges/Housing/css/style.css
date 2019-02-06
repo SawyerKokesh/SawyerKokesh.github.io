@@ -5,7 +5,35 @@ nav {
 
     color: white !important;
 }
-.probPara{
-  width: 50%;
-  padding: 10px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left:20px;
+  padding-right:20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:black;
+
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
