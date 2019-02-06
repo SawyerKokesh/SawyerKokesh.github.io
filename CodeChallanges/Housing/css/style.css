@@ -1,11 +1,71 @@
 body{
-    font-family:'Dosis','Helvetica Neue',Arial,sans-serif !important;
+  font-family:'Dosis','Helvetica Neue',Arial,sans-serif !important;
 }
 nav {
 
-    color: white !important;
+  color: white !important;
 }
-.probPara{
-  width: 50%;
-  padding: 10px;
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
 }
+
+li{
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding-left:20px;
+padding-right:20px;
+text-decoration: none;
+}
+
+li a:hover {
+color:black;
+
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+.filterDiv {
+
+      display: none;
+  }
+
+  .show {
+      display: block;
+  }
+
+  .container {
+      margin-top: 20px;
+      overflow: hidden;
+  }
+
+  /* Style the buttons */
+  .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+  }
+
+  .btn:hover {
+      background-color: #ddd;
+  }
+
+  .btn.active {
+      background-color: #666;
+      color: white;
+  }
