@@ -1,39 +1,33 @@
 body{
-    font-family:'Dosis','Helvetica Neue',Arial,sans-serif !important;
+  font-family:'Dosis','Helvetica Neue',Arial,sans-serif !important;
 }
 nav {
 
-    color: white !important;
+  color: white !important;
 }
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+list-style-type: none;
+overflow: hidden;
 }
+
 li{
-  float: left;
+float: left;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding-left:20px;
-  padding-right:20px;
-  text-decoration: none;
+display: block;
+color: white;
+text-align: center;
+padding-left:20px;
+padding-right:20px;
+text-decoration: none;
 }
 
 li a:hover {
-  color:black;
+color:black;
 
 }
 
-.active {
-  background-color: #4CAF50;
-}
 
 
